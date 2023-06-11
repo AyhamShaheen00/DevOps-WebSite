@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Celurean"}}
+  </head>
+  <body>
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light bg-white" container="container"
+    button="primary"}}
+
+    <!-- IMAGE -->
+    <section
+      data-jarallax
+      data-speed=".8"
+      class="py-12 py-md-15 bg-cover jarallax"
+      style="background-image: url(assets/img/covers/ci-cd.jpg)"
+    ></section>
+
+    <!-- HEADER -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h1 class="display-4 text-center">
+              Understanding the Difference: Continuous Integration Vs.
+              Continuous Deployment
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+              Continuous Integration (CI) and Continuous Deployment (CD) are
+              critical practices. This article delves into these two core
+              components of the DevOps culture, outlining their key features and
+              distinguishing the unique roles they play in the software
+              development lifecycle.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Figure -->
+            <figure class="figure mb-7">
+              <!-- Image -->
+              <img
+                class="figure-img img-fluid rounded lift lift-lg"
+                src="assets/img/illustrations/ci-cd.jpg"
+                alt="Delving into the differences between CI and CD"
+              />
+
+              <!-- Caption -->
+              <figcaption class="figure-caption text-center">
+                This article delves into the difference between CI and CD
+              </figcaption>
+            </figure>
+
+            <!-- Text -->
+            <p>
+              The modern software development landscape has evolved to
+              prioritize speed, efficiency, and reliability. In this context,
+              the concepts of Continuous Integration (CI) and Continuous
+              Deployment (CD) have emerged as crucial elements of the DevOps
+              culture. They offer streamlined, automated processes that ensure
+              quick delivery of software products without compromising their
+              quality. Despite their common usage, the differences between these
+              two methodologies are often unclear.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h2 class="fw-bold">Continuous Integration (CI)</h2>
+
+            <!-- Text -->
+            <p>
+              Continuous Integration is a development practice where developers
+              integrate code into a shared repository frequently, ideally
+              several times a day. Each integration is then automatically
+              verified by an instance of automated build, allowing teams to
+              detect problems early.
+            </p>
+            <p>
+              CI aims to prevent integration problems, often referred to as
+              "integration hell," where merging pieces of code from various
+              developers becomes a complex, error-prone task. By integrating
+              regularly, you can detect and locate errors quickly, and remove
+              them immediately.
+            </p>
+            <p>Key elements of Continuous Integration include:</p>
+
+            <ul class="list-unstyled mb-7">
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Version Control System:</strong> This system tracks
+                  changes to the source code and helps manage different versions
+                  of it. Examples include Git, Mercurial, and Subversion.
+                </p>
+              </li>
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Automated Build System:</strong> This system compiles
+                  the source code into executable code. Examples include Maven,
+                  Gradle, and Ant.
+                </p>
+              </li>
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Automated Test System:</strong> This system runs a
+                  suite of tests to ensure the correctness of the new code.
+                  Examples include JUnit, Selenium, and TestNG.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h2 class="fw-bold">Continuous Deployment (CD)</h2>
+
+            <!-- Text -->
+            <p>
+              While Continuous Integration is all about integrating and testing
+              the new code, Continuous Deployment takes it a step further. In
+              CD, every change that passes all stages of your production
+              pipeline is released to your customers. There's no explicit
+              approval from a developer; if the CI passes, the software gets
+              deployed.
+            </p>
+            <p>
+              This approach is beneficial as it automates the entire software
+              release process. It reduces the chances of human error, ensures
+              quick feedback, and increases the speed of delivery.
+            </p>
+            <p>Key elements of Continuous Deployment include:</p>
+
+            <ul class="list-unstyled mb-7">
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Automated Deployment Tools:</strong> These tools
+                  automatically deploy the application to the production
+                  environment. Examples include Jenkins, CircleCI, and Travis
+                  CI.
+                </p>
+              </li>
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Monitoring and Logging Systems:</strong> These systems
+                  monitor the application in production to detect any abnormal
+                  behavior. Examples include ELK Stack, Grafana, and Prometheus.
+                </p>
+              </li>
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Rollback Mechanism:</strong> This is a safety
+                  mechanism to roll back changes in case of any issues in
+                  production.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Divider -->
+            <hr class="hr-md mb-7" />
+            <!-- Blockquote -->
+            <blockquote class="blockquote mb-7">
+              <p class="h2 mb-0 text-center text-primary-desat">
+                “CI focuses on the build and test phase of the development
+                cycle, whereas CD focuses on automating the deployment process”
+              </p>
+            </blockquote>
+            <!-- Divider -->
+            <hr class="hr-md mb-7" />
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h2 class="fw-bold">CI/CD Pipeline</h2>
+
+            <!-- Text -->
+            <p>
+              While Continuous Integration and Continuous Deployment are
+              distinct practices, they are often combined into a CI/CD pipeline,
+              especially in the DevOps culture. The CI/CD pipeline automates the
+              software delivery process. The pipeline builds code, runs tests
+              (CI), and safely deploys a new version of the application to
+              production (CD).
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h2 class="fw-bold">The Key Differences</h2>
+
+            <!-- Text -->
+            <p>
+              While both CI and CD are integral parts of the CI/CD pipeline and
+              aim at automating the software delivery process, they serve
+              different purposes:
+            </p>
+
+            <ul class="list-unstyled mb-7">
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Focus:</strong> CI focuses on the build and test phase
+                  of the development cycle, aiming to prevent integration
+                  problems, whereas CD focuses on automating the deployment
+                  process, ensuring that the software can be reliably released
+                  at any time.
+                </p>
+              </li>
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Automation Level:</strong> In CI, every change in code
+                  triggers an automated build-and-test sequence for the given
+                  project, aiming to validate its correctness. In CD, every
+                  change that passes the automated pipeline is released to
+                  production automatically.
+                </p>
+              </li>
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+                <p>
+                  <strong>Frequency of Code Release:</strong> CI does not
+                  necessarily involve frequent code release to the production
+                  environment. The primary aim is to make the mainline or trunk
+                  always ready for deployment. On the other hand, CD involves
+                  frequent and automated deployment to production.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pb-6 mb-6 pb-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h2 class="fw-bold">Sharing a Common Goal</h2>
+
+            <!-- Text -->
+            <p>
+              Continuous Integration and Continuous Deployment are two pivotal
+              practices in modern software development, specifically in DevOps
+              and Agile methodologies. While they serve different purposes, they
+              share the common goal of improving software quality
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- ARTICLES -->
+    <section class="pt-7 pt-md-10 bg-light">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+            <!-- Heading -->
+            <h3 class="mb-0">More about DevOps</h3>
+
+            <!-- Text -->
+            <p class="mb-0 text-muted">
+              Learn more about DevOps and how it can help your business.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a
+                class="card-img-top"
+                href="{{webRoot}}/article-automation-ci-cd.html"
+              >
+                <!-- Image -->
+                <img
+                  src="assets/img/covers/automation.jpg"
+                  alt="Embracing the Future: Automation in CI/CD"
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    {{> curves/curve-3}}
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <a
+                class="card-body"
+                href="{{webRoot}}/article-automation-ci-cd.html"
+              >
+                <!-- Heading -->
+                <h3>Embracing the Future: Automation in CI/CD</h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Continuous Integration and Continuous Deployment, collectively
+                  known as CI/CD, are transforming the landscape of software
+                  delivery, making it more streamlined and reliable. The real
+                  magic behind this transformative shift is automation.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a
+                class="card-img-top"
+                href="{{webRoot}}/article-ci-cd-startups.html"
+              >
+                <!-- Image -->
+                <img
+                  src="assets/img/covers/startups.jpg"
+                  alt="The Importance of CI/CD for Startups: Creating the Future One
+                  Build at a Time"
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    {{> curves/curve-3}}
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <a
+                class="card-body"
+                href="{{webRoot}}/article-ci-cd-startups.html"
+              >
+                <!-- Heading -->
+                <h3>
+                  The Importance of CI/CD for Startups: Creating the Future One
+                  Build at a Time
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Continuous Integration/Continuous Delivery (CI/CD) is a
+                  crucial strategy for startups, enabling rapid development,
+                  enhanced product quality, and a culture of innovation through
+                  automated builds and tests. By reducing manual effort,
+                  increasing transparency, and fostering collaboration, CI/CD
+                  accelerates value delivery, minimizes risks, and facilitates a
+                  DevOps culture, thereby providing startups with a competitive
+                  edge.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-light"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+  </body>
+</html>

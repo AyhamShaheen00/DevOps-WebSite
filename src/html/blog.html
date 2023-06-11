@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Celurean"}}
+  </head>
+  <body class="bg-light">
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light bg-white" container="container"
+    button="primary"}}
+
+    <!-- WELCOME -->
+    <section
+      data-jarallax
+      data-speed=".8"
+      class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover jarallax"
+      style="background-image: url(assets/img/covers/articles.jpg)"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+            <!-- Heading -->
+            <h1 class="display-3 fw-bold text-white">Articles About DevOps</h1>
+
+            <!-- Text -->
+            <p class="lead mb-0 text-white-75">
+              Keep up to date with what we're working on! Celurean is an ever
+              evolving theme with regular updates.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- ARTICLES -->
+    <section class="pt-7 pt-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Card -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg">
+              <div class="row gx-0">
+                <div class="col-12">
+                  <!-- Badge -->
+                  <span
+                    class="badge rounded-pill bg-light badge-float badge-float-inside"
+                  >
+                    <span class="h6 text-uppercase">Featured</span>
+                  </span>
+                </div>
+                <a
+                  class="col-12 col-md-6 order-md-2 bg-cover card-img-end"
+                  style="background-image: url(assets/img/covers/startups.jpg)"
+                  href="{{webRoot}}/article-ci-cd-startups.html"
+                >
+                  <!-- Image (placeholder) -->
+                  <img
+                    src="assets/img/covers/startups.jpg"
+                    alt="The Importance of CI/CD for Startups: Creating the Future One
+                    Build at a Time"
+                    class="img-fluid d-md-none invisible"
+                  />
+
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-start shape-fluid-y text-white d-none d-md-block"
+                  >
+                    {{> curves/curve-5}}
+                  </div>
+                </a>
+                <div class="col-12 col-md-6 order-md-1">
+                  <!-- Body -->
+                  <a
+                    class="card-body"
+                    href="{{webRoot}}/article-ci-cd-startups.html"
+                  >
+                    <!-- Heading -->
+                    <h3>
+                      The Importance of CI/CD for Startups: Creating the Future
+                      One Build at a Time
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="mb-0 text-muted">
+                      Continuous Integration/Continuous Delivery (CI/CD) is a
+                      crucial strategy for startups, enabling rapid development,
+                      enhanced product quality, and a culture of innovation
+                      through automated builds and tests. By reducing manual
+                      effort, increasing transparency, and fostering
+                      collaboration, CI/CD accelerates value delivery, minimizes
+                      risks, and facilitates a DevOps culture, thereby providing
+                      startups with a competitive edge.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="pt-7 pt-md-10">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+            <!-- Heading -->
+            <h3 class="mb-0">More about DevOps</h3>
+
+            <!-- Text -->
+            <p class="mb-0 text-muted">
+              Learn more about DevOps and how it can help your business.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a
+                class="card-img-top"
+                href="{{webRoot}}/article-difference-ci-cd.html"
+              >
+                <!-- Image -->
+                <img
+                  src="assets/img/covers/ci-cd.jpg"
+                  alt="Understanding the Difference: Continuous Integration Vs.
+                  Continuous Deployment"
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    {{> curves/curve-3}}
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <a
+                class="card-body"
+                href="{{webRoot}}/article-difference-ci-cd.html"
+              >
+                <!-- Heading -->
+                <h3>
+                  Understanding the Difference: Continuous Integration Vs.
+                  Continuous Deployment
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Continuous Integration (CI) and Continuous Deployment (CD) are
+                  critical practices. This article delves into these two core
+                  components of the DevOps culture, outlining their key features
+                  and distinguishing the unique roles they play in the software
+                  development lifecycle.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex">
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <!-- Image -->
+              <a
+                class="card-img-top"
+                href="{{webRoot}}/article-difference-ci-cd.html"
+              >
+                <!-- Image -->
+                <img
+                  src="assets/img/covers/automation.jpg"
+                  alt="Embracing the Future: Automation in CI/CD"
+                  class="card-img-top"
+                />
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    {{> curves/curve-3}}
+                  </div>
+                </div>
+              </a>
+
+              <!-- Body -->
+              <a
+                class="card-body"
+                href="{{webRoot}}/article-difference-ci-cd.html"
+              >
+                <!-- Heading -->
+                <h3>Embracing the Future: Automation in CI/CD</h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  In the fast-paced, ever-evolving world of software
+                  development, efficiency and speed are paramount. Today,
+                  Continuous Integration and Continuous Deployment, collectively
+                  known as CI/CD, are transforming the landscape of software
+                  delivery, making it more streamlined and reliable. Yet, the
+                  real magic behind this transformative shift is automation.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-gray-200">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-gray-200"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+  </body>
+</html>

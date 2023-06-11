@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Celurean"}}
+  </head>
+  <body>
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light" container="container"
+    button="primary"}}
+
+    <!-- WELCOME -->
+    <section class="position-relative py-12 pt-md-14 mt-n11">
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-2 text-light">
+        {{> blurs/blur-2}}
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-12 col-md-6">
+            <!-- Image -->
+            <img
+              src="assets/img/illustrations/devops-services.png"
+              alt="Celurean"
+              class="img-fluid mw-130 float-end mb-6 mb-md-0"
+              data-aos="fade-right"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <!-- Heading -->
+            <h1 class="display-3 fw-bold">
+              <div data-aos="fade-left">We Build Solutions</div>
+              <div data-aos="fade-left" data-aos-delay="100">
+                That Actually Matter.
+              </div>
+            </h1>
+
+            <!-- Text -->
+            <p
+              class="fs-lg text-muted mb-0"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              Learn more about our comprehensive services for cloud
+              infrastructure management, ensuring reliable, scalable, and secure
+              Continuous Integration (CI) and Continuous Delivery (CD) for your
+              applications and data. So you can focus on your products.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- ABOUT -->
+    <section class="py-8 py-md-11 bg-gray-200" id="services">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+            <!-- Heading -->
+            <h2 class="fw-bold">Streamlining Your Cloud Operations.</h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-7 mb-md-9">
+              No matter what you're working on, who you're with, or how many of
+              you there are, Celurean can help. These are our services.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Card -->
+            <div
+              class="card shadow-light-lg overflow-hidden text-center text-lg-start"
+              data-aos="fade-up"
+            >
+              <div class="row">
+                <div class="col-md-3 text-center d-none d-md-block">
+                  <!-- Image -->
+                  <img
+                    src="assets/img/illustrations/services-infrastructure-management.png"
+                    class="img-fluid m-2 p-lg-8"
+                    alt="Infrastructure Management"
+                  />
+                </div>
+                <div class="col-md-9">
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">Infrastructure Management.</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted lead">
+                      This includes setting up, managing, and monitoring
+                      servers, whether they're on-premise or in the cloud. It
+                      also includes managing networking and ensuring that the
+                      infrastructure can scale and perform according to the
+                      needs of the application.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Card -->
+            <div
+              class="card shadow-light-lg overflow-hidden text-center text-lg-start"
+              data-aos="fade-up"
+            >
+              <div class="row">
+                <div class="col-md-3 text-center d-none d-md-block">
+                  <!-- Image -->
+                  <img
+                    src="assets/img/illustrations/services-configuration-management.png"
+                    class="img-fluid m-2 p-lg-8"
+                    alt="Configuration Management"
+                  />
+                </div>
+                <div class="col-md-9">
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">Configuration Management.</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted lead">
+                      This involves setting up systems and software in a
+                      consistent and repeatable way. It could involve scripting
+                      system setup, deploying configuration changes, or using
+                      configuration management tools like Ansible, Puppet, or
+                      Chef.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Card -->
+            <div
+              class="card shadow-light-lg overflow-hidden text-center text-lg-start"
+              data-aos="fade-up"
+            >
+              <div class="row">
+                <div class="col-md-3 text-center d-none d-md-block">
+                  <!-- Image -->
+                  <img
+                    src="assets/img/illustrations/services-monitoring-logging.png"
+                    class="img-fluid m-2 p-lg-8"
+                    alt="Monitoring and Logging"
+                  />
+                </div>
+                <div class="col-md-9">
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">Monitoring and Logging.</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted lead">
+                      In order to ensure that systems are running correctly and
+                      to debug issues when they arise, IT operations teams set
+                      up monitoring and logging systems. This allows them to
+                      collect and analyze metrics and logs from their
+                      applications and infrastructure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Card -->
+            <div
+              class="card shadow-light-lg overflow-hidden text-center text-lg-start"
+              data-aos="fade-up"
+            >
+              <div class="row">
+                <div class="col-md-3 text-center d-none d-md-block">
+                  <!-- Image -->
+                  <img
+                    src="assets/img/illustrations/services-incident-response.png"
+                    class="img-fluid m-2 p-lg-8"
+                    alt="Incident Response"
+                  />
+                </div>
+                <div class="col-md-9">
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">Incident Response.</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted lead">
+                      When things go wrong, the operations team is often
+                      responsible for responding. This could involve diagnosing
+                      and fixing technical issues, or coordinating responses
+                      between different teams.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Card -->
+            <div
+              class="card shadow-light-lg overflow-hidden text-center text-lg-start"
+              data-aos="fade-up"
+            >
+              <div class="row">
+                <div class="col-md-3 text-center d-none d-md-block">
+                  <!-- Image -->
+                  <img
+                    src="assets/img/illustrations/services-security-management.png"
+                    class="img-fluid m-2 p-lg-8 d-none d-sm-block"
+                    alt="Security Management"
+                  />
+                </div>
+                <div class="col-md-9">
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">Security Management.</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted lead">
+                      Operations teams are often involved in managing security,
+                      including setting up firewalls, managing access controls,
+                      applying security patches, and monitoring systems for
+                      potential security breaches.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Card -->
+            <div
+              class="card shadow-light-lg overflow-hidden text-center text-lg-start"
+              data-aos="fade-up"
+            >
+              <div class="row">
+                <div class="col-md-3 text-center d-none d-md-block">
+                  <!-- Image -->
+                  <img
+                    src="assets/img/illustrations/services-deplyoment-release-management.png"
+                    class="img-fluid m-2 p-lg-8 d-none d-sm-block"
+                    alt="Deployment and Release Management"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">Deployment and Release Management.</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted lead">
+                      This involves managing the process of releasing new
+                      versions of software, which includes tasks like managing
+                      environments, scheduling deployments, and automating the
+                      release process to reduce errors and downtime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+            <!-- Card -->
+            <div
+              class="card shadow-light-lg overflow-hidden text-center text-lg-start"
+              data-aos="fade-up"
+            >
+              <div class="row">
+                <div class="col-md-3 text-center d-none d-md-block">
+                  <!-- Image -->
+                  <img
+                    src="assets/img/illustrations/services-capacity-planning.png"
+                    class="img-fluid m-2 p-lg-8 d-none d-sm-block"
+                    alt="Capacity Planning"
+                  />
+                </div>
+                <div class="col-md-9">
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">Capacity Planning.</h3>
+
+                    <!-- Text -->
+                    <p class="text-muted lead">
+                      Operations teams are responsible for ensuring that there's
+                      sufficient capacity to meet the demands placed on the
+                      system. This includes planning for peaks in demand and
+                      scaling infrastructure up and down as required.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <section id="devopsAtAGlance">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-sm-12 py-6 text-center">
+          <h2 class="display-3">DevOps at a Glance</h2>
+          <img
+            src="assets/img/illustrations/devops-flywheel.jpg"
+            class="img-fluid"
+            alt="An overview of our DevOps services"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="py-10 py-md-13 bg-gray-200 bg-between"
+      style="
+        background-image: url(assets/img/illustrations/try-celurean-truncated.png),
+          url(assets/img/illustrations/launch-truncated.png);
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Heading -->
+            <h2 class="fw-bold">
+              Try Cerulean for Your DevOps and CI/CD Needs
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-8 px-lg-9">
+              Continuous Integration and Continuous Deployment (CI/CD) practices
+              have become integral to modern software development processes. We
+              can enable your teams to maintain high-quality code, minimize
+              errors, and increase productivity. But, to make the most of these
+              practices, effective orchestration is paramount. Get in touch with
+              us to plan your CI/CD pipelines.
+            </p>
+
+            <!-- Button -->
+            <a
+              href="mailto:hello@Celureanhq.nl"
+              class="btn btn-primary-desat lift"
+            >
+              Contact Us <i class="fe fe-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-dark">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-dark"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+  </body>
+</html>
